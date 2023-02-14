@@ -513,7 +513,12 @@ h6 {
 
 .main__image-ibg {
   width: 50%;
-  padding-bottom: 36%;
+  padding-bottom: 31%;
+}
+
+.main__image-ibg img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .info-main {
@@ -2381,7 +2386,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .main__image-ibg {
     width: 100%;
-    padding-bottom: 80%;
+    padding-bottom: 63%;
   }
 
   .info-main {
