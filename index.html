@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230213185417">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230214211724">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,7 @@
 						</ul>
 					</nav>
 				</div>
-				<a href="tel:0961113308" data-da=".menu,991.98" class="menu__btn btn btn-orange">
+				<a href="tel:0961113308" data-da=".menu,991.98" type="button" class="menu__btn btn btn-orange">
 					<img src="img/icon/phone-2.svg" alt="phone">
 					<span>Замовити</span>
 				</a>
@@ -391,10 +391,10 @@
 						<p class="requisition__text">Вигідні умови оренди спецтехніки у Кривому Розі. Вартість оренди одна з найкращих на ринку спецтехніки. Заповніть форму зворотного зв'язку і ми вам передзвонимо.</p>
 					</div>
 					<div class="requisition__block">
-						<form action="files/sendmail/sendmail.php" method="POST" class="requisition__form">
+						<form action="files/telegram.php" method="POST" class="requisition__form">
 							<div class="requisition__form-inp">
-								<input type="text" name="form[name]" data-error="Error" placeholder="Ваше ім'я" class="requisition__input">
-								<input type="text" name="form[tel]" data-error="Error" placeholder="Ваш номер" class="requisition__input">
+								<input type="text" name="name" data-error="Error" placeholder="Ваше ім'я" class="requisition__input">
+								<input type="text" name="phone" data-error="Error" placeholder="Ваш номер" class="requisition__input">
 							</div>
 							<button type="submit" class="requisition__btn btn btn-orange">Залишити заявку</button>
 						</form>
@@ -497,10 +497,10 @@
 				<div class="order__container">
 					<div class="order__info">
 						<h2 class="order__title title">Замовити за 5 хвилин</h2>
-						<form action="files/sendmail/sendmail.php" method="POST" class="order__form">
+						<form action="files/telegram.php" method="POST" class="order__form">
 							<div class="requisition__form-inp">
-								<input type="text" name="form[name]" data-error="Error" placeholder="ім'я" class="requisition__input">
-								<input type="text" name="form[tel]" data-error="Error" placeholder="Телефон" class="requisition__input">
+								<input type="text" name="name" data-error="Error" placeholder="ім'я" class="requisition__input">
+								<input type="text" name="phone" data-error="Error" placeholder="Телефон" class="requisition__input">
 								<textarea name="message" id="formMessage" placeholder="Запиши коментар" class="requisition__input"></textarea>
 							</div>
 							<button type="submit" class="order__btn btn btn-orange">Замовити</button>
@@ -551,7 +551,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230213185417"></script>
+	<script src="js/app.min.js?_v=20230214211724"></script>
 </body>
 
 </html>
